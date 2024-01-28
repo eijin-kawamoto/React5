@@ -1,11 +1,8 @@
 export default function Header() {
     return (
-      <header className="hero is-dark is-bold">
-        <div className="hero-body">
-          <div className="container">
-            <h1 className="title">Cute Dog Images</h1>
-          </div>
-        </div>
+      <header>
+            <h1 className="title">Find favorite shibe</h1>
+            <h2>Shibe is japanese shiba inu</h2>
       </header>
     );
   }

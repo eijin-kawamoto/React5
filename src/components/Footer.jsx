@@ -1,12 +1,8 @@
 export default function Footer() {
     return (
-      <footer className="footer">
-        <div className="content has-text-centered">
-          <p>Dog images are retrieved from Dog API</p>
-          <p>
-            <a href="https://dog.ceo/dog-api/about">Donate to Dog API</a>
-          </p>
-        </div>
+      <footer>
+        <p>日本大学文理学部情報科学科Webプログラミングの演習課題</p>
+        <p>5422057 川元瑛仁</p>
       </footer>
     );
   }
