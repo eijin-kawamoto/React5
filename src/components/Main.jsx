@@ -9,9 +9,14 @@ export default function Main() {
 
     useEffect(() => {
       async function fetchData() {
-        const shibeImage = await fetchshibe();
-        setshibe(shibeImage);
+        try {
+          const shibeImage = await fetchshibe();
+          setshibe(shibeImage);
+        } catch (error) {
+          console.error('Error fetching shibe image: ', error);
+        }
       }
+
       fetchData();
     },[]);
 
@@ -19,7 +24,7 @@ export default function Main() {
     <main>
       <section className="section">
         <div className="container">
-          <Gallery />
+          <Gallery shibe={shibe}/>
         </div>
       </section>
     </main>
